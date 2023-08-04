@@ -32,9 +32,11 @@ export const NavBar = () => {
           <Link href="/">
             <img src={logo} alt="logo" className="w-12" />
           </Link>
-          <span className=" text-white-gray text-2xl font-bold ml-4 hover:text-orange">
-            AFTA Wallet
-          </span>
+          <Link href="/">
+            <span className=" text-white-gray text-2xl font-bold ml-4 hover:text-orange">
+              AFTA Wallet
+            </span>
+          </Link>
         </h1>
 
         <div className="hidden md:flex items-center gap-16">

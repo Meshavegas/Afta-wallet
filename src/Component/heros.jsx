@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import whatsapp from "../assets/whatsapp-button.png";
 import scan from "../assets/scan.png";
 import { TypeAnimation } from "react-type-animation";
 const Heros = () => {
+  const [deferredPrompt, setDeferredPrompt] = useState();
+  useEffect(() => {
+    window.addEventListener("beforeinstallprompt", (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      setDeferredPrompt(e);
+    });
+  }, []);
+
+  const handleInstall = async () => {
+    if (deferredPrompt !== null) {
+      // Show the install prompt
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === "accepted") {
+        console.log("User accepted the install prompt");
+      } else {
+        console.log("User dismissed the install prompt");
+      }
+    }
+  };
+
   return (
     <div className="flex justify-center gap-3 items-center flex-col md:flex-row">
       <div className=" md:w-1/2 flex flex-col gap-6">
@@ -23,10 +46,16 @@ const Heros = () => {
             repeat={Infinity}
           />
         </h1>
-        <p className=" text-white-gray-light md:text-left  text-center text-xl">
+        <p className=" text-white-gray-light md:text-left  text-center text-xl flex flex-col justify-center md:items-start items-center ">
           Travel across Africa without having to worry about exchanging from one
           local currency to another. You get to keep more of the value of your
           money in any given local currency.
+          <div
+            className=" text-2xl text-white bg-orange-dark w-fit mt-4 px-8 py-3 rounded-3xl cursor-pointer"
+            onClick={handleInstall}
+          >
+            Install App
+          </div>
         </p>
         <div>
           <h1 className=" font-bold text-xl">Just scan or tap on whatsapp</h1>

@@ -31,48 +31,48 @@ const Fontionalitys = () => {
         />
       </div>
       <div className="md:w-2/3 flex flex-wrap gap-10 justify-center items-center ">
-        <div className=" w-5/12 flex flex-col items-center justify-center text-xl">
+        <div className="w-full sm:w-5/12 flex flex-col items-center justify-center text-xl">
           <img
             src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/27/18/new-pound.jpg"
             alt=""
             className=" w-28"
           />
           <h1 className=" text-2xl font-extrabold mt-3 text-center">
-            Wallet more money
+            Fund your wallet
           </h1>
           <div className=" text-white-gray-light text-justify mt-3">
-            Once you make a deposit in a new local currency, we automatically
-            create a new wallet for you. You don't have to worry about the
-            details. Just use your wallet as if it were one and the same.
+            Deposit money into your wallet directly using any of the available
+            mobile money for free or through a local Agent. We do our best to
+            cover most networks available.
           </div>
         </div>
-        <div className=" w-5/12 flex flex-col items-center justify-center text-xl">
+        <div className=" w-full sm:w-5/12 flex flex-col items-center justify-center text-xl">
           <img
             src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/27/18/new-pound.jpg"
             alt=""
             className=" w-28"
           />
-          <h1 className=" text-2xl font-extrabold mt-3">Wallet more money</h1>
+          <h1 className=" text-2xl font-extrabold mt-3">Add more wallets</h1>
           <div className=" text-white-gray-light text-justify mt-3">
             Once you make a deposit in a new local currency, we automatically
             create a new wallet for you. You don't have to worry about the
-            details. Just use your wallet as if it were one and the same.
+            details. Just use your wallet as if it were one and the same.{" "}
           </div>
         </div>
-        <div className=" w-5/12 flex flex-col items-center justify-center text-xl">
+        <div className=" w-full sm:w-5/12 flex flex-col items-center justify-center text-xl">
           <img
             src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/27/18/new-pound.jpg"
             alt=""
             className=" w-28"
           />
-          <h1 className=" text-2xl font-extrabold mt-3">Wallet more money</h1>
+          <h1 className=" text-2xl font-extrabold mt-3">Track transactions</h1>
           <div className=" text-white-gray-light text-justify mt-3">
-            Once you make a deposit in a new local currency, we automatically
-            create a new wallet for you. You don't have to worry about the
-            details. Just use your wallet as if it were one and the same.
+            Track all transactions in one place with a detailed history of every
+            operation you perform on the wallet. We make sure your funds don't
+            escape.
           </div>
         </div>
-        <div className=" w-5/12 flex flex-col items-center justify-center text-xl">
+        <div className=" w-full sm:w-5/12 flex flex-col items-center justify-center text-xl">
           <img
             src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/27/18/new-pound.jpg"
             alt=""
