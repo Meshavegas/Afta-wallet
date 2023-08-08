@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import whatsapp from "../assets/whatsapp-button.png";
+import Deposit from "../assets/momo-deposit.mp4";
 import scan from "../assets/scan.png";
+import playStore from "../assets/google-play-badge.svg";
+import appStore from "../assets/app-store-badge.svg";
 import { TypeAnimation } from "react-type-animation";
+
 const Heros = () => {
   const [deferredPrompt, setDeferredPrompt] = useState();
   useEffect(() => {
@@ -46,19 +50,22 @@ const Heros = () => {
             repeat={Infinity}
           />
         </h1>
-        <p className=" text-white-gray-light md:text-left  text-center text-xl flex flex-col justify-center md:items-start items-center ">
+        <p className=" text-light md:text-left  text-center text-xl flex flex-col justify-center md:items-start items-center ">
           Travel across Africa without having to worry about exchanging from one
           local currency to another. You get to keep more of the value of your
           money in any given local currency.
           <div
-            className=" text-2xl text-white bg-orange-dark w-fit mt-4 px-8 py-3 rounded-3xl cursor-pointer"
+            className=" text-2xl text-white w-full mt-4 px-8 py-3 rounded-3xl cursor-pointer justify-center flex flex-col items-center"
             onClick={handleInstall}
           >
-            Install App
+            <img src={playStore} alt="" className="w-11/12 h-24" />
+            <img src={appStore} alt="" className="w-11/12 h-24 mt-1" />
           </div>
         </p>
         <div>
-          <h1 className=" font-bold text-xl">Just scan or tap on whatsapp</h1>
+          <h1 className=" font-bold text-xl md:text-2xl text-center">
+            Just scan or tap on whatsapp
+          </h1>
           <div className=" flex md:flex-row flex-col justify-center gap-5 items-center">
             <a href="https://wa.link/4y31k2" className="w-1/3">
               <img src={whatsapp} alt="" className="w-full" />
@@ -68,11 +75,7 @@ const Heros = () => {
         </div>
       </div>
       <div className=" md:w-1/2 ">
-        <img
-          src="https://www.mymoneysouq.com/financial-blog/wp-content/uploads/2020/02/1_KJ6YEWE1e1fHvJZc1ZppAw.jpeg"
-          alt="w-full"
-          className="w-full"
-        ></img>
+        <video src={Deposit} muted autoPlay loop></video>
       </div>
     </div>
   );

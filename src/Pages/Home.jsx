@@ -24,7 +24,7 @@ const Home = () => {
         <Conviction />
       </Layout>
       <Layout
-        classNamePropieties="bg-[url('https://aftawallet.com/assets/img/africa.jpg')] bg-cover bg-center  bg-black opacity-70 z-0"
+        classNamePropieties="bg-[url('https://aftawallet.com/assets/img/africa.jpg')] bg-cover bg-center  bg-opacity-0"
         isVisit={true}
       >
         <Visit />

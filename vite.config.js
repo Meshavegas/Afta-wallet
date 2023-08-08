@@ -15,7 +15,7 @@ export default defineConfig({
       },
       includeAssets: ["favicon.ico", "robots.txt", "safari-pinned-tab.svg"],
       manifest: {
-        name: "Afta Wallet - A cross-border multi-currency wallet",
+        name: "Afta Wallet",
         short_name: "Afta Wallet",
         description: "AFTA WALLET - A cross-border multi-currency wallet",
         theme_color: "#ffffff",

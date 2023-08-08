@@ -1,5 +1,6 @@
 import React from "react";
-import Ball from "../assets/ball.svg";
+
+import videoCashout from "../assets/demo-screen.mp4";
 import { TypeAnimation } from "react-type-animation";
 const Conviction = () => {
   return (
@@ -16,14 +17,21 @@ const Conviction = () => {
             repeat={Infinity}
           />
         </h1>
-        <p className=" text-justify mt-7 text-xl text-brown">
+        <p className=" text-justify mt-7 text-xl ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
           repellendus dolorem neque sint nihil, blanditiis harum ea quaerat?
           Accusantiu
         </p>
       </div>
-      <div className="md:w-3/12 mt-10 md:mt-0">
-        <img src={Ball} alt="ball" className=" w-full" />
+      <div className=" w-80 h-80  mt-10 md:mt-0 rounded-full overflow-hidden">
+        {/* <img src={Ball} alt="ball" className=" w-full" /> */}
+        <video
+          src={videoCashout}
+          muted
+          autoPlay
+          loop
+          className=" w-full object-cover"
+        />
       </div>
     </div>
   );

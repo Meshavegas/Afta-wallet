@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" text-dark-grey flex  flex-col justify-center items-center ">
-      <div className=" tex-">
+    <div className=" text-white flex  flex-col justify-center items-center">
+      <div className=" text-white">
         <span>AFTA Wallet 2013. All Rights Reserved.</span>
       </div>
       <div className=" flex gap-2 text-xl mt-7">

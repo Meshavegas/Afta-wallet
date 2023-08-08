@@ -9,3 +9,43 @@
   filter: blur(0);
   transform: translateX(0);
 }
+
+.phone-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 280px; /* Ajustez la largeur selon vos besoins */
+  height: 560px; /* Ajustez la hauteur selon vos besoins */
+
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/maniv-a665b.appspot.com/o/portrait_black.png?alt=media&token=36ff1f0b-e7e2-4305-852d-c5f40742a579");
+  background-size: contain;
+  /* Ajustez le rayon de courbure selon vos besoins */
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.phone-image {
+  position: absolute;
+  /* top: 10%;
+  left: 5%; */
+  width: 85% !important;
+  height: 80%;
+  object-fit: contain;
+}
+
+.gradientIcon {
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    blue,
+    red
+  ); /* Remplacez les couleurs par les couleurs de votre choix */
+  padding: 10px; /* Ajustez le padding selon vos besoins */
+  /* border-radius: 50%; Pour rendre l'arrière-plan circulaire */
+}
+
+.icon {
+  color: transparent; /* Rend l'icône transparent pour laisser place au dégradé de couleur */
+  font-size: 34px; /* Ajustez la taille de l'icône selon vos besoins */
+}
