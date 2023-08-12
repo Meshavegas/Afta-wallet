@@ -144,7 +144,7 @@ export const NavBar = () => {
         <Dialog
           open={openD}
           handler={handleOpenD}
-          className="md:w-[30%] w-[50%] absoltue md:left-[35%] left-[15%] top-[25%]"
+          className="md:w-[30%] w-[80%] absoltue md:left-[35%] left-[10%] top-[10%] md:top-[25%]"
         >
           <DialogHeader className="flex justify-between px-10  bg-gradient-to-r from-orange to-purple rounded-t-lg">
             <h1 className="">Write us</h1>
