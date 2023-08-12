@@ -47,13 +47,13 @@ const ChatBot = () => {
           path: page_path,
         },
         function (error) {
-          // console.log("window.Tawk_API errorr",error)
+          //    console.log("window.Tawk_API errorr", error);
         }
       );
     };
   }, []);
 
-  return <div>ChatBot</div>;
+  return <div></div>;
 };
 
 export default ChatBot;
