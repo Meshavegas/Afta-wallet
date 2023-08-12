@@ -7,6 +7,7 @@ import Layout from "./Component/layout";
 import Footer from "./Component/footer";
 import Privacy from "./Pages/Privacy";
 import Terms from "./Pages/Terms";
+import ChatBot from "./Component/ChatBot";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
       </Routes>
+      <ChatBot />
       <Layout classNamePropieties="bg-black">
         <Footer />
       </Layout>
