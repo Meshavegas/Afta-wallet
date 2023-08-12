@@ -18,9 +18,9 @@ const Conviction = () => {
           />
         </h1>
         <p className=" text-justify mt-7 text-xl ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
-          repellendus dolorem neque sint nihil, blanditiis harum ea quaerat?
-          Accusantiu
+          We have designed a simple wallet that will allow you deposit your
+          money in a currency of your choice and also withdraw cash in the
+          currency of your choice at low fees and direct exchange rates.
         </p>
       </div>
       <div className=" w-80 h-80  mt-10 md:mt-0 rounded-full overflow-hidden">
