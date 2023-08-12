@@ -3,6 +3,10 @@ import "./App.css";
 import Home from "./Pages/Home";
 import { NavBar } from "./Component/NavBar";
 import { Route, Routes } from "react-router-dom";
+import Layout from "./Component/layout";
+import Footer from "./Component/footer";
+import Privacy from "./Pages/Privacy";
+import Terms from "./Pages/Terms";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +16,12 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" exactly element={<Home />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
+      <Layout classNamePropieties="bg-black">
+        <Footer />
+      </Layout>
     </div>
   );
 }

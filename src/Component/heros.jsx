@@ -55,11 +55,12 @@ const Heros = () => {
           local currency to another. You get to keep more of the value of your
           money in any given local currency.
           <div
-            className=" text-2xl text-white w-full mt-4 px-8 py-3 rounded-3xl cursor-pointer justify-center flex flex-col items-center"
+            className=" text-2xl w-full  cursor-pointer justify-center flex flex-col items-center"
             onClick={handleInstall}
           >
-            <img src={playStore} alt="" className="w-11/12 h-24" />
-            <img src={appStore} alt="" className="w-11/12 h-24 mt-1" />
+            <div className="bg-orange-dark text-white w-fit mt-4 px-8 py-3 rounded-3xl ">
+              Install App
+            </div>
           </div>
         </p>
         <div>

@@ -10,10 +10,23 @@ import { FiMenu } from "react-icons/fi";
 import logo from "../assets/logo-small.png";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import ScrollToHashElement from "./scrollTo";
+import {
+  Button,
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
+  Textarea,
+  Input,
+} from "@material-tailwind/react";
 
 const navLinks = [
-  { name: "Product", to: "#product" },
-  { name: "Download", to: "#download" },
+  { name: "Product", to: "/#product" },
+  { name: "Download", to: "/#download" },
+  // {
+  //   name: "API",
+  //   to: "",
+  // },
 ];
 
 export const NavBar = () => {
@@ -23,6 +36,9 @@ export const NavBar = () => {
     setIsOpen((prev) => !prev);
     setclassNameAnim("show");
   };
+  const [openD, setOpenD] = useState(false);
+
+  const handleOpenD = () => setOpenD(!openD);
 
   return (
     <div className="sticky top-0 w-full bg-white shadow-lg h-[80px] z-40 md:px-16 px-5">
@@ -45,25 +61,30 @@ export const NavBar = () => {
               <NavLink
                 key={name + to}
                 to={to}
-                className={({ isActive }) => {
-                  return isActive
-                    ? "text-black"
-                    : "text-white-gray hover:text-white-gray-light";
-                }}
+                className="text-white-gray hover:text-white-gray-light"
               >
                 {name}
               </NavLink>
             ))}
-          </nav>
-          <div className="flex items-center   text-white text-xl bg-orange p-3 rounded-full hover:bg-orange-dark focus:outline-none justify-center align-middle">
             <a
+              target="_blank"
+              href="https://us-central1-afta-wallet.cloudfunctions.net/api/v1/docs"
+            >
+              API
+            </a>
+          </nav>
+          <div
+            onClick={handleOpenD}
+            className="flex items-center   text-white text-xl bg-orange p-3 rounded-full hover:bg-orange-dark focus:outline-none justify-center align-middle"
+          >
+            <div
               href="https://wa.link/4y31k2"
               className="flex items-center"
               target="_blank"
             >
               <BsFillChatTextFill className="mx-4" />
               <span className="mr-5">Contact us</span>
-            </a>
+            </div>
           </div>
         </div>
 
@@ -97,21 +118,113 @@ export const NavBar = () => {
                 {name}
               </NavLink>
             ))}
+            <a
+              target="_blank"
+              href="https://us-central1-afta-wallet.cloudfunctions.net/api/v1/docs"
+            >
+              API
+            </a>
           </ul>
           <div className="mt-4 md:hidden flex items-center justify-between gap-6">
             <div className="flex items-center   text-white text-xl bg-orange p-3 rounded-full hover:bg-orange-dark focus:outline-none justify-center align-middle">
-              <a
+              <div
+                onClick={handleOpenD}
                 href="https://wa.link/4y31k2"
                 className="flex items-center"
                 target="_blank"
               >
                 <BsFillChatTextFill className="mx-4" />
                 <span className="mr-5">Contact us</span>
-              </a>
+              </div>
             </div>
           </div>
         </div>
       )}
+      <div className="flex justify-center items-center">
+        <Dialog
+          open={openD}
+          handler={handleOpenD}
+          className="md:w-[30%] w-[50%] absoltue md:left-[35%] left-[15%] top-[25%]"
+        >
+          <DialogHeader className="flex justify-between px-10  bg-gradient-to-r from-orange to-purple rounded-t-lg">
+            <h1 className="">Write us</h1>
+            <span
+              className=" text-white opacity-60 font-bold hover:cursor-pointer"
+              onClick={handleOpenD}
+            >
+              X
+            </span>
+          </DialogHeader>
+          <DialogBody className=" flex flex-col justify-center items-center gap-4">
+            <label
+              for="UserName"
+              className="w-full relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-orange focus-within:ring-1 focus-within:ring-blue-600"
+            >
+              <input
+                type="text"
+                id="UserName"
+                placeholder="Full name"
+                className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+
+              <span className="absolute start-3 top-2 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-[66%] peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+                Full name
+              </span>
+            </label>
+            <label
+              for="UserEmail"
+              className="w-full relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-orange focus-within:ring-1 focus-within:ring-blue-600"
+            >
+              <input
+                type="email"
+                id="UserEmail"
+                placeholder="Email"
+                className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+
+              <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-[66%] peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+                Email
+              </span>
+            </label>
+            <label
+              for="UserPhone"
+              className="w-full relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-orange focus-within:ring-1 focus-within:ring-blue-600"
+            >
+              <input
+                type="phone"
+                id="UserEmail"
+                placeholder="Phone"
+                className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+
+              <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-[66%] peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
+                Phone number
+              </span>
+            </label>
+            <label
+              for="UserMessage"
+              className="w-full h-32 relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-orange focus-within:ring-1 focus-within:ring-blue-600"
+            >
+              <textarea
+                type="phone"
+                id="UserMessage"
+                placeholder="Message"
+                className=" w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+            </label>
+          </DialogBody>
+          <DialogFooter className=" flex justify-center">
+            <Button
+              variant="text"
+              color="red"
+              onClick={handleOpenD}
+              className="mr-1 text-xl bg-orange w-[90%] rounded-3xl text-white"
+            >
+              <span>Submit</span>
+            </Button>
+          </DialogFooter>
+        </Dialog>
+      </div>
     </div>
   );
 };

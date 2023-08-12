@@ -32,9 +32,6 @@ const Home = () => {
       <Layout classNamePropieties="bg-gradient-to-r from-orange  to-purple">
         <DescriptionApp />
       </Layout>
-      <Layout classNamePropieties="bg-black">
-        <Footer />
-      </Layout>
     </div>
   );
 };
