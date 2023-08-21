@@ -59,7 +59,7 @@ const Heros = () => {
             onClick={handleInstall}
           >
             <div className="bg-orange-dark text-white w-fit mt-4 px-8 py-3 rounded-3xl ">
-              Install App
+              Download
             </div>
           </div>
         </p>
@@ -71,7 +71,7 @@ const Heros = () => {
             <a href="https://wa.link/4y31k2" className="w-1/3">
               <img src={whatsapp} alt="" className="w-full" />
             </a>
-            <img src={scan} alt="" className=" w-1/3" />
+            <img src={scan} alt="" className=" md:w-1/5" />
           </div>
         </div>
       </div>
