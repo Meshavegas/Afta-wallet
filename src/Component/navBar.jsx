@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   BsCart3,
   BsSuitHeart,
-  BsSearch,
+  BsFillPersonPlusFill,
   BsFillChatTextFill,
 } from "react-icons/bs";
 import { MdOutlineClose } from "react-icons/md";
@@ -73,19 +73,15 @@ export const NavBar = () => {
               API
             </a>
           </nav>
-          <div
-            onClick={handleOpenD}
+          <a
+            href="https://afta-wallet-admin.web.app/signup/user"
             className="flex items-center   text-white text-xl bg-orange p-3 rounded-full hover:bg-orange-dark focus:outline-none justify-center align-middle"
           >
-            <div
-              href="https://wa.link/4y31k2"
-              className="flex items-center"
-              target="_blank"
-            >
-              <BsFillChatTextFill className="mx-4" />
-              <span className="mr-5">Contact us</span>
+            <div className="flex items-center" target="_blank">
+              <BsFillPersonPlusFill className="mx-4" />
+              <span className="mr-5">SingUp</span>
             </div>
-          </div>
+          </a>
         </div>
 
         <div className=" pr-2 md:hidden">
@@ -127,15 +123,14 @@ export const NavBar = () => {
           </ul>
           <div className="mt-4 md:hidden flex items-center justify-between gap-6">
             <div className="flex items-center   text-white text-xl bg-orange p-3 rounded-full hover:bg-orange-dark focus:outline-none justify-center align-middle">
-              <div
-                onClick={handleOpenD}
-                href="https://wa.link/4y31k2"
+              <a
+                href="https://afta-wallet-admin.web.app/signup/user"
                 className="flex items-center"
                 target="_blank"
               >
-                <BsFillChatTextFill className="mx-4" />
-                <span className="mr-5">Contact us</span>
-              </div>
+                <BsFillPersonPlusFill className="mx-4" />
+                <span className="mr-5">SingUp</span>
+              </a>
             </div>
           </div>
         </div>

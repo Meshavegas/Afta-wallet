@@ -5,7 +5,7 @@ const Terms = () => {
     <div className="min-h-screen md:px-32 px-8 my-6">
       <h1 className=" text-3xl text-center mb-9">TERMS AND CONDITIONS</h1>
       <div className="leading-10 text-lg">
-        <p>Last updated: 2023-03-01</p>
+        <p>Last updated: 2023-08-31</p>
         <p>
           1. <b>Introduction</b>
         </p>
@@ -16,7 +16,7 @@ const Terms = () => {
         <p>
           These Terms of Service (“Terms”, “Terms of Service”) govern your use
           of our website located at <b>aftawallet.com</b>
-          (together or individually “Service”) operated by <b>PayWS Corp</b>.
+          (together or individually “Service”) operated by <b>PayWS Ltd</b>.
         </p>
         <p>
           Our Privacy Policy also governs your use of our Service and explains
@@ -449,7 +449,7 @@ const Terms = () => {
         </p>
         <p>
           These Terms shall be governed and construed in accordance with the
-          laws of The Republic of Cameroon, which governing law applies to
+          laws of The Republic of Rwanda, which governing law applies to
           agreement without regard to its conflict of law provisions.
         </p>
         <p>
@@ -519,8 +519,8 @@ const Terms = () => {
           have come accross the ad.
         </p>
         <p>
-          Every ad viewed will cost <strong>$0.45</strong>
-          and ads clicked on cost <strong>$0.99</strong>. This amount is
+          Every ad viewed will cost <strong>$0.05</strong>
+          and ads clicked on cost <strong>$0.09</strong>. This amount is
           automatically debitted from the user's wallet before the add is
           processed (in the case of ad view), and after the ad is consumed (in
           the case of clicked ad). Ad transactions do not appear in the
