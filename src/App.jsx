@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { Suspense } from "react";
+
 import "./App.css";
 import Home from "./Pages/Home";
 import { NavBar } from "./Component/NavBar";
@@ -10,21 +11,21 @@ import Terms from "./Pages/Terms";
 import ChatBot from "./Component/ChatBot";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="app">
-      <NavBar />
-      <Routes>
-        <Route path="/" exactly element={<Home />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/terms" element={<Terms />} />
-      </Routes>
-      <ChatBot />
-      <Layout classNamePropieties="bg-black">
-        <Footer />
-      </Layout>
-    </div>
+    <Suspense fallback={null}>
+      <div className="app">
+        <NavBar />
+        <Routes>
+          <Route path="/" exactly element={<Home />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+        </Routes>
+        <ChatBot />
+        <Layout classNamePropieties="bg-black">
+          <Footer />
+        </Layout>
+      </div>
+    </Suspense>
   );
 }
 

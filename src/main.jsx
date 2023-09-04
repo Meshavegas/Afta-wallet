@@ -12,6 +12,7 @@ import {
 import { registerSW } from "virtual:pwa-register";
 import { ThemeProvider } from "@material-tailwind/react";
 import * as Sentry from "@sentry/react";
+import "./i18n.js";
 
 Sentry.init({
   dsn: "https://001862c953e2cece1c216467704d446e@o1129428.ingest.sentry.io/4505744149118976",

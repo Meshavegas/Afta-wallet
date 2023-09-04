@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BsCart3,
   BsSuitHeart,
@@ -19,10 +19,11 @@ import {
   Textarea,
   Input,
 } from "@material-tailwind/react";
+import { useTranslation } from "react-i18next";
 
 const navLinks = [
-  { name: "Product", to: "/#product" },
-  { name: "Download", to: "/#download" },
+  { name: "product", to: "/#product" },
+  { name: "download", to: "/#download" },
   // {
   //   name: "API",
   //   to: "",
@@ -30,6 +31,7 @@ const navLinks = [
 ];
 
 export const NavBar = () => {
+  const { i18n, t } = useTranslation(["navbar"]);
   const [isOpen, setIsOpen] = useState(false);
   const [classNameAnim, setclassNameAnim] = useState("hidden-botom");
   const handleIsOpen = () => {
@@ -39,6 +41,16 @@ export const NavBar = () => {
   const [openD, setOpenD] = useState(false);
 
   const handleOpenD = () => setOpenD(!openD);
+
+  useEffect(() => {
+    if (localStorage.getItem("i18nextLng")?.length > 2) {
+      i18n.changeLanguage("en");
+    }
+  }, []);
+
+  const handleChangeLanguage = (e) => {
+    i18n.changeLanguage(e.target.value);
+  };
 
   return (
     <div className="sticky top-0 w-full bg-white shadow-lg h-[80px] z-40 md:px-16 px-5">
@@ -63,15 +75,24 @@ export const NavBar = () => {
                 to={to}
                 className="text-white-gray hover:text-white-gray-light"
               >
-                {name}
+                {t(name)}
               </NavLink>
             ))}
             <a
               target="_blank"
               href="https://us-central1-afta-wallet.cloudfunctions.net/api/v1/docs"
             >
-              API
+              {t("api")}
             </a>
+            <select
+              value={localStorage.getItem("i18nextLng")}
+              className=" text-2xl text-black"
+              onChange={handleChangeLanguage}
+            >
+              <option value="en">English</option>
+              <option value="fr">fancais</option>
+              <option value="sw">Swahili</option>
+            </select>
           </nav>
           <a
             href="https://afta-wallet-admin.web.app/signup/user"
@@ -79,7 +100,7 @@ export const NavBar = () => {
           >
             <div className="flex items-center" target="_blank">
               <BsFillPersonPlusFill className="mx-4" />
-              <span className="mr-5">SingUp</span>
+              <span className="mr-5">{t("signin")}</span>
             </div>
           </a>
         </div>
@@ -111,15 +132,24 @@ export const NavBar = () => {
                   return isActive ? "text-white-gray" : "text-white-gray";
                 }}
               >
-                {name}
+                {t(name)}
               </NavLink>
             ))}
             <a
               target="_blank"
               href="https://us-central1-afta-wallet.cloudfunctions.net/api/v1/docs"
             >
-              API
+              {t("api")}
             </a>
+            <select
+              className=" text-2xl text-black"
+              onChange={handleChangeLanguage}
+              value={localStorage.getItem("i18nextLng")}
+            >
+              <option value="en">English</option>
+              <option value="fr">fancais</option>
+              <option value="sw">Swahili</option>
+            </select>
           </ul>
           <div className="mt-4 md:hidden flex items-center justify-between gap-6">
             <div className="flex items-center   text-white text-xl bg-orange p-3 rounded-full hover:bg-orange-dark focus:outline-none justify-center align-middle">
@@ -129,7 +159,7 @@ export const NavBar = () => {
                 target="_blank"
               >
                 <BsFillPersonPlusFill className="mx-4" />
-                <span className="mr-5">SingUp</span>
+                <span className="mr-5">{t("signin")}</span>
               </a>
             </div>
           </div>
