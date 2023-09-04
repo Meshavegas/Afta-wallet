@@ -9,10 +9,10 @@ i18n
   .use(initReactI18next)
   .init({
     backend: {
-      loadPath: "/src/assets/i18n/{{ns}}/{{lng}}.json",
+      loadPath: "/i18n/{{ns}}/{{lng}}.json",
     },
     fallbackLng: "en",
-    debug: false,
+    debug: true,
     ns: ["common", "home", "navbar", "terms", "privacy"],
     interpolation: {
       espaceValue: false,
@@ -20,7 +20,7 @@ i18n
       postProcess: "html",
     },
     react: {
-      wait: true,
+      useSuspense: true,
     },
   });
 export default i18n;
