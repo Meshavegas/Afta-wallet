@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "deposit": "Weka pesa na kiasi chochote",
+    "OneWallet": "Pochi moja kwa pesa zako zote za ndani",
+    "secureAnd": "Mkoba wa kubadilishana salama na wa haraka",
+    "cashout": "Pesa popote kwa urahisi",
+    "paragra1": "Safiri kote Afrika bila kuwa na wasiwasi kuhusu kubadilishana kutoka sarafu moja ya ndani hadi nyingine. Unaweza kuhifadhi zaidi ya thamani ya pesa zako katika sarafu yoyote ya ndani.",
+    "download": "Pakua",
+    "install": " Changanua tu au gusa whatsapp"
+  },
+  "description": {
+    "text1": "\"Sasa unaweza kupakia CFA yako, Naira au Cedi kwenye pochi yako na kutoa Randi ya Afrika Kusini au Shilingi ya Kenya.\""
+  },
+  "fontionalitys": {
+    "title": {
+      "one": "Kufadhili mkoba wako",
+      "two": "Tuma pesa zako",
+      "three": "Rack ya shughuli",
+      "four": "Wallet pesa zaidi"
+    },
+    "body": {
+      "one": "Weka pesa kwenye pochi yako moja kwa moja ukitumia pesa zozote zinazopatikana kwa simu ya mkononi bila malipo au kupitia kwa Wakala wa karibu nawe. Tunajitahidi tuwezavyo kufunika mitandao mingi inayopatikana.",
+      "two": "Kutoka kwa opereta yeyote wa pesa kwa simu ya mkononi, pesa kutoka kwa pochi yako katika sarafu uliyofadhili. Malipo yako yatagharimu 4% pekee bila malipo yaliyofichwa. Vikomo vya pesa vinaweza kutumika.",
+      "three": "weka miamala yote katika sehemu moja na historia ya kina ya kila operesheni unayofanya kwenye pochi. Tunahakikisha kuwa pesa zako haziepukiki.",
+      "four": "Mara tu unapoweka amana kwa sarafu mpya ya ndani, tunakuundia kiotomatiki pochi mpya. Huna haja ya kuwa na wasiwasi kuhusu maelezo. Tumia tu pochi yako kana kwamba ni moja na sawa."
+    }
+  },
+  "conviction": {
+    "text": "Kufanya pesa zako zipatikane unapozihitaji zaidi.",
+    "text2": "Tumeunda pochi rahisi ambayo itakuruhusu kuweka pesa zako kwa sarafu utakayochagua na pia kutoa pesa katika sarafu unayochagua kwa ada ya chini na viwango vya ubadilishaji wa moja kwa moja."
+  },
+  "visit": {
+    "text1": "Je, uko tayari kutembelea nchi yako ijayo ya Kiafrika?",
+    "text2": "Usisahau mkoba wako.",
+    "btnText": "Unganisha mkoba wako"
+  },
+  "descriptionApp": {
+    "text1": "Huduma ya pochi inapatikana kikamilifu kupitia chatbot yetu."
+  },
+  "footer": {
+    "copyrigth": "AFTA Wallet 2023. Haki Zote Zimehifadhiwa.",
+    "privacy": "Faragha",
+    "terms": " Masharti ",
+    "faq": "FAQ",
+    "contact": "Wasiliana nasi"
+  },
+  "dialog": {
+    "write": "Tuandikie",
+    "fullName": "Jina kamili",
+    "phone": "Nambari ya simu",
+    "submit": "Wasilisha"
+  }
+}
