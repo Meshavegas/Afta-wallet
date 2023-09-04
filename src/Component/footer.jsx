@@ -9,24 +9,27 @@ import {
   Textarea,
   Input,
 } from "@material-tailwind/react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation(["home"]);
+
   const [openD, setOpenD] = useState(false);
 
   const handleOpenD = () => setOpenD(!openD);
   return (
     <div className=" text-white flex  flex-col justify-center items-center">
       <div className=" text-white">
-        <span>AFTA Wallet 2023. All Rights Reserved.</span>
+        <span>{t("footer.copyrigth")}</span>
       </div>
       <div className=" flex gap-2 text-xl mt-7">
-        <Link to="/privacy">Privacy</Link>
+        <Link to="/privacy">{t("footer.privacy")}</Link>
         <a href="#">.</a>
-        <Link to="terms">Terms</Link>
+        <Link to="terms">{t("footer.terms")}</Link>
         <a href="#">.</a>
-        <a href="#">FAQ</a>
+        <a href="#">{t("footer.faq")} </a>
         <span className="mr-5 cursor-pointer" onClick={handleOpenD}>
-          . Contact us
+          . {t("footer.contact")}
         </span>
       </div>
       <div className="flex justify-center items-center">
@@ -36,7 +39,7 @@ const Footer = () => {
           className="md:w-[30%] w-[80%] absoltue md:left-[35%] left-[10%] top-[10%] md:top-[25%]"
         >
           <DialogHeader className="flex justify-between px-10  bg-gradient-to-r from-orange to-purple rounded-t-lg">
-            <h1 className="">Write us</h1>
+            <h1 className="">{t("dialog.write")}</h1>
             <span
               className=" text-white opacity-60 font-bold hover:cursor-pointer"
               onClick={handleOpenD}
@@ -57,7 +60,7 @@ const Footer = () => {
               />
 
               <span className="absolute start-3 top-2 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-[66%] peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                Full name
+                {t("dialog.fullName")}
               </span>
             </label>
             <label
@@ -72,7 +75,7 @@ const Footer = () => {
               />
 
               <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-[66%] peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                Email
+                E-mail
               </span>
             </label>
             <label
@@ -87,7 +90,7 @@ const Footer = () => {
               />
 
               <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-[66%] peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                Phone number
+                {t("dialog.phone")}
               </span>
             </label>
             <label
@@ -109,7 +112,7 @@ const Footer = () => {
               onClick={handleOpenD}
               className="mr-1 text-xl bg-orange w-[90%] rounded-3xl text-white"
             >
-              <span>Submit</span>
+              <span>{t("dialog.submit")}</span>
             </Button>
           </DialogFooter>
         </Dialog>

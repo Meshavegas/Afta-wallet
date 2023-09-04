@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "deposit": "Deposit any currency and amount",
+    "OneWallet": "One wallet for all your local currency",
+    "secureAnd": "Secure and fast exchange wallet",
+    "cashout": "Cashout anywhere easily",
+    "paragra1": "Travel across Africa without having to worry about exchanging from one local currency to another. You get to keep more of the value of your money in any given local currency.",
+    "download": "Download",
+    "install": " Just scan or tap on whatsapp"
+  },
+  "description": {
+    "text1": "\"You can now load your CFA, Naira or Cedi into your wallet and cashout the Rand in South Africa or the Shilling in Kenya.\""
+  },
+  "fontionalitys": {
+    "title": {
+      "one": "Fund your wallet",
+      "two": "Cashout your funds",
+      "three": "Track transactions",
+      "four": "Wallet more money"
+    },
+    "body": {
+      "one": "Deposit money into your wallet directly using any of the available mobile money for free or through a local Agent. We do our best to cover most networks available.",
+      "two": "From any mobile money operator, cashout funds from your wallet in the currency you have funded. Your Cashout will cost you only 4% with no hidden charges. Cashout limits may apply.",
+      "three": "rack all transactions in one place with a detailed history of every operation you perform on the wallet. We make sure your funds don't escape.",
+      "four": "Once you make a deposit in a new local currency, we automatically create a new wallet for you. You don't have to worry about the details. Just use your wallet as if it were one and the same."
+    }
+  },
+  "conviction": {
+    "text": "Making your money available when you need it the most.",
+    "text2": "We have designed a simple wallet that will allow you deposit your money in a currency of your choice and also withdraw cash in the currency of your choice at low fees and direct exchange rates."
+  },
+  "visit": {
+    "text1": "Ready to visit your next African country?.",
+    "text2": "Don't forget your wallet.",
+    "btnText": "Connect your wallet"
+  },
+  "descriptionApp": {
+    "text1": "The wallet service is fully accessible via our chatbot."
+  },
+  "footer": {
+    "copyrigth": "AFTA Wallet 2023. All Rights Reserved.",
+    "privacy": "Privacy",
+    "terms": " Terms ",
+    "faq": "FAQ",
+    "contact": "Contact us"
+  },
+  "dialog": {
+    "write": "Write us",
+    "fullName": "Full name",
+    "phone": "Phone number",
+    "submit": "Submit"
+  }
+}

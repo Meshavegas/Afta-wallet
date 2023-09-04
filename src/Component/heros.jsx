@@ -5,9 +5,11 @@ import scan from "../assets/scan.png";
 import playStore from "../assets/google-play-badge.svg";
 import appStore from "../assets/app-store-badge.svg";
 import { TypeAnimation } from "react-type-animation";
+import { useTranslation } from "react-i18next";
 
 const Heros = () => {
   const [deferredPrompt, setDeferredPrompt] = useState();
+  const { t } = useTranslation(["home"]);
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (e) => {
       // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -36,13 +38,13 @@ const Heros = () => {
         <h1 className=" font-extrabold text-3xl">
           <TypeAnimation
             sequence={[
-              "Deposit any currency and amount",
+              t("hero.deposit"),
               1000,
-              "One wallet for all your local currency ",
+              t("hero.OneWallet"),
               1000,
-              "Secure and fast exchange wallet",
+              t("hero.secureAnd"),
               1000,
-              "Cashout anywhere easyly",
+              t("hero.cashout"),
               1000,
             ]}
             wrapper="span"
@@ -51,21 +53,19 @@ const Heros = () => {
           />
         </h1>
         <p className=" text-light md:text-left  text-center text-xl flex flex-col justify-center md:items-start items-center ">
-          Travel across Africa without having to worry about exchanging from one
-          local currency to another. You get to keep more of the value of your
-          money in any given local currency.
+          {t("hero.paragra1")}
           <div
             className=" text-2xl w-full  cursor-pointer justify-center flex flex-col items-center"
             onClick={handleInstall}
           >
             <div className="bg-orange-dark text-white w-fit mt-4 px-8 py-3 rounded-3xl ">
-              Download
+              {t("hero.download")}
             </div>
           </div>
         </p>
         <div>
           <h1 className=" font-bold text-xl md:text-2xl text-center">
-            Just scan or tap on whatsapp
+            {t("hero.install")}
           </h1>
           <div className=" flex md:flex-row flex-col justify-center gap-5 items-center">
             <a href="https://wa.link/4y31k2" className="w-1/3">

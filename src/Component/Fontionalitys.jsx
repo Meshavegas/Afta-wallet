@@ -8,6 +8,7 @@ import { BsFunnel } from "react-icons/bs";
 import { LiaBookSolid } from "react-icons/lia";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { GiNetworkBars } from "react-icons/gi";
+import { useTranslation } from "react-i18next";
 // import Xsvg from "../assets/x.svg";
 // const PhoneFrame = ({ children }) => {
 //   const imageUrl =
@@ -36,6 +37,7 @@ const GradientIcon = ({ icon: Icon }) => {
 };
 
 const Fontionalitys = () => {
+  const { t } = useTranslation(["home"]);
   return (
     <div
       className="  flex items-center justify-center flex-col-reverse md:flex-row"
@@ -69,39 +71,37 @@ const Fontionalitys = () => {
         <div className="w-full sm:w-5/12 flex flex-col items-center justify-center text-xl">
           <img src={funnel} alt="" className=" w-24 h-24" />
           <h1 className=" text-2xl font-extrabold mt-3 text-center">
-            Fund your wallet
+            {t("fontionalitys.title.one")}
           </h1>
           <div className=" text-light text-justify mt-3">
-            Deposit money into your wallet directly using any of the available
-            mobile money for free or through a local Agent. We do our best to
-            cover most networks available.
+            {t("fontionalitys.body.one")}
           </div>
         </div>
         <div className=" w-full sm:w-5/12 flex flex-col items-center justify-center text-xl">
           <img src={Book} alt="" className=" w-24 h-24" />
-          <h1 className=" text-2xl font-extrabold mt-3">Cashout your funds</h1>
+          <h1 className=" text-2xl font-extrabold mt-3">
+            {t("fontionalitys.title.two")}
+          </h1>
           <div className=" text-light text-justify mt-3">
-            From any mobile money operator, cashout funds from your wallet in
-            the currency you have funded. Your Cashout will cost you only 4%
-            with no hidden charges. Cashout limits may apply.
+            {t("fontionalitys.body.two")}
           </div>
         </div>
         <div className=" w-full sm:w-5/12 flex flex-col items-center justify-center text-xl">
           <img src={network} alt="" className=" w-24 h-24" />
-          <h1 className=" text-2xl font-extrabold mt-3">Track transactions</h1>
+          <h1 className=" text-2xl font-extrabold mt-3">
+            {t("fontionalitys.title.three")}
+          </h1>
           <div className=" text-light text-justify mt-3">
-            Track all transactions in one place with a detailed history of every
-            operation you perform on the wallet. We make sure your funds don't
-            escape.
+            {t("fontionalitys.body.three")}
           </div>
         </div>
         <div className=" w-full sm:w-5/12 flex flex-col items-center justify-center text-xl">
           <img src={plus} alt="" className=" w-24 h-24" />
-          <h1 className=" text-2xl font-extrabold mt-3">Wallet more money</h1>
+          <h1 className=" text-2xl font-extrabold mt-3">
+            {t("fontionalitys.title.four")}
+          </h1>
           <div className=" text-light text-justify mt-3">
-            Once you make a deposit in a new local currency, we automatically
-            create a new wallet for you. You don't have to worry about the
-            details. Just use your wallet as if it were one and the same.
+            {t("fontionalitys.body.four")}
           </div>
         </div>
       </div>
