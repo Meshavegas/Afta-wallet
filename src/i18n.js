@@ -12,7 +12,7 @@ i18n
       loadPath: "/i18n/{{ns}}/{{lng}}.json",
     },
     fallbackLng: "en",
-    debug: true,
+    debug: false,
     ns: ["common", "home", "navbar", "terms", "privacy"],
     interpolation: {
       espaceValue: false,

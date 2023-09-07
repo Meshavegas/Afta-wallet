@@ -21,6 +21,8 @@
     "react-i18next": "^13.2.2",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.15.0",
+    "react-select": "^5.7.4",
+    "react-select-material-ui": "^9.2.0",
     "react-type-animation": "^3.1.0",
     "workbox-build": "^7.0.0",
     "workbox-window": "^7.0.0"

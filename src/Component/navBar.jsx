@@ -8,6 +8,9 @@ import {
 import { MdOutlineClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 import logo from "../assets/logo-small.png";
+import usa from "../assets/france.png";
+import kenya from "../assets/kenya.png";
+import french from "../assets/usa.png";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import ScrollToHashElement from "./scrollTo";
 import {
@@ -19,6 +22,7 @@ import {
   Textarea,
   Input,
 } from "@material-tailwind/react";
+import Select from "react-select";
 import { useTranslation } from "react-i18next";
 
 const navLinks = [
@@ -38,12 +42,10 @@ export const NavBar = () => {
     setIsOpen((prev) => !prev);
     setclassNameAnim("show");
   };
+
   const [openD, setOpenD] = useState(false);
 
   const handleOpenD = () => setOpenD(!openD);
-  useCallback(() => {
-    () => window.location.reload();
-  }, [i18n.language]);
 
   useEffect(() => {
     if (localStorage.getItem("i18nextLng")?.length > 2) {
@@ -88,14 +90,15 @@ export const NavBar = () => {
             >
               {t("api")}
             </a>
+
             <select
               value={localStorage.getItem("i18nextLng")}
               className=" text-2xl text-black"
               onChange={handleChangeLanguage}
             >
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="sw">Swahili</option>
+              <option value="en">🇺🇸 English</option>
+              <option value="fr">🇫🇷 Français</option>
+              <option value="sw">🇰🇪 Swahili</option>
             </select>
           </nav>
           <a
@@ -150,9 +153,9 @@ export const NavBar = () => {
               onChange={handleChangeLanguage}
               value={localStorage.getItem("i18nextLng")}
             >
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="sw">Swahili</option>
+              <option value="en">🇺🇸 English</option>
+              <option value="fr">🇫🇷 Français</option>
+              <option value="sw">🇰🇪 Swahili</option>
             </select>
           </ul>
           <div className="mt-4 md:hidden flex items-center justify-between gap-6">
