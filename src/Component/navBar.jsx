@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   BsCart3,
   BsSuitHeart,
@@ -41,6 +41,9 @@ export const NavBar = () => {
   const [openD, setOpenD] = useState(false);
 
   const handleOpenD = () => setOpenD(!openD);
+  useCallback(() => {
+    () => window.location.reload();
+  }, [i18n.language]);
 
   useEffect(() => {
     if (localStorage.getItem("i18nextLng")?.length > 2) {
@@ -50,6 +53,7 @@ export const NavBar = () => {
 
   const handleChangeLanguage = (e) => {
     i18n.changeLanguage(e.target.value);
+    window.location.reload(false);
   };
 
   return (
@@ -90,7 +94,7 @@ export const NavBar = () => {
               onChange={handleChangeLanguage}
             >
               <option value="en">English</option>
-              <option value="fr">fancais</option>
+              <option value="fr">Français</option>
               <option value="sw">Swahili</option>
             </select>
           </nav>
@@ -147,7 +151,7 @@ export const NavBar = () => {
               value={localStorage.getItem("i18nextLng")}
             >
               <option value="en">English</option>
-              <option value="fr">fancais</option>
+              <option value="fr">Français</option>
               <option value="sw">Swahili</option>
             </select>
           </ul>
