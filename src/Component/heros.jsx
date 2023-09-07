@@ -4,6 +4,7 @@ import Deposit from "../assets/momo-deposit.mp4";
 import scan from "../assets/scan.png";
 import playStore from "../assets/google-play-badge.svg";
 import appStore from "../assets/app-store-badge.svg";
+import flyer from "../assets/1024.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { useTranslation } from "react-i18next";
 
@@ -76,7 +77,8 @@ const Heros = () => {
         </div>
       </div>
       <div className=" md:w-1/2 ">
-        <video src={Deposit} muted autoPlay loop></video>
+        <img src={flyer} alt="" className="w-full" />
+        {/* <video src={Deposit} muted autoPlay loop></video> */}
       </div>
     </div>
   );

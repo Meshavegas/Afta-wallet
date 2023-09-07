@@ -1,45 +1,45 @@
 {
   "hero": {
-    "deposit": "Déposer n'importe quelle devise et n'importe quel montant",
-    "OneWallet": "Un seul portefeuille pour toutes les monnaies locales",
+    "deposit": "Gérer n'importe quelle devise partout en Afrique",
+    "OneWallet": "Un seul portefeuille pour toutes les devises locales",
     "secureAnd": "Portefeuille d'échange sécurisé et rapide",
     "cashout": "Encaisser facilement n'importe où",
-    "paragra1": "Voyagez en Afrique sans avoir à vous soucier du change d'une monnaie locale à l'autre. Vous conservez une plus grande partie de la valeur de votre argent dans une monnaie locale donnée.",
+    "paragra1": "Voyagez partout en Afrique sans vous soucier de changer d'une monnaie locale à l'autre. Vous conservez une plus grande partie de la valeur de votre argent dans une monnaie locale donnée.",
     "download": "Télécharger",
     "install": " Il suffit de scanner ou de taper sur whatsapp"
   },
   "description": {
-    "text1": "\"Vous pouvez désormais charger votre CFA, votre Naira ou votre Cedi dans votre portefeuille et encaisser le Rand en Afrique du Sud ou le Shilling au Kenya..\""
+    "text1": "\"Deposez désormais en CFA, Naira ou Cedi dans votre portefeuille et encaisser en RWF au Rwanda ou le Shilling au Kenya.\""
   },
   "fontionalitys": {
     "title": {
-      "one": "Financez votre portefeuille",
+      "one": "Rechargez votre portefeuille",
       "two": "Encaisser vos fonds",
-      "three": "Suivre les transactions",
-      "four": "Portefeuille plus d'argent"
+      "three": "Historique des transactions",
+      "four": "Multiples devises"
     },
     "body": {
-      "one": "Déposez de l'argent dans votre porte-monnaie en utilisant directement l'un des réseaux d'argent mobile disponibles, gratuitement ou par l'intermédiaire d'un agent local. Nous faisons de notre mieux pour couvrir la plupart des réseaux disponibles.",
-      "two": "Depuis n'importe quel opérateur de téléphonie mobile, retirez des fonds de votre portefeuille dans la devise que vous avez approvisionnée. Votre retrait ne vous coûtera que 4 %, sans frais cachés. Des limites d'encaissement peuvent s'appliquer.",
-      "three": "enregistrez toutes vos transactions en un seul endroit avec un historique détaillé de toutes les opérations effectuées sur le portefeuille. Nous veillons à ce que vos fonds ne s'échappent pas.",
-      "four": "Dès que vous effectuez un dépôt dans une nouvelle devise locale, nous créons automatiquement un nouveau portefeuille pour vous. Vous n'avez pas à vous soucier des détails. Utilisez simplement votre portefeuille comme s'il s'agissait d'un seul et même portefeuille."
+      "one": "Déposez gratuitement vos devises locale dans votre portefeuille via l'un des réseaux mobile disponible, ou par l'intermédiaire d'un agent local.",
+      "two": "Encaissez votre argent dans n'importe quel devise a des frais imbattable, depuis n'importe quel opérateur de téléphonie mobile dans votre Pays d'acceuil.",
+      "three": "Consultez toutes vos transactions avec un historique détaillé des opérations effectuées sur le portefeuille. Nous veillons integralement sur vos fonds.",
+      "four": "Nous sommes toujours entrain d'ajouter des devises afin de couvrir le large spectre de devises en Afrique et de vous apporter une meilleur experience."
     }
   },
   "conviction": {
     "text": "Mettre votre argent à disposition au moment où vous en avez le plus besoin.",
-    "text2": "Nous avons conçu un portefeuille simple qui vous permet de déposer votre argent dans la devise de votre choix et de retirer de l'argent dans la devise de votre choix à des frais réduits et à des taux de change directs."
+    "text2": "Nous avons conçu un portefeuille simple qui vous permet de gérer vos multiples devises locale et de retirer de l'argent dans la devise de votre choix à des frais réduits et à des taux de change amicaux."
   },
   "visit": {
-    "text1": "Prêt à visiter votre prochain pays africain ?",
-    "text2": "N'oubliez pas votre portefeuille.",
+    "text1": "Prêt pour un aventure à travers le continent Africain ?",
+    "text2": "N'oublie pas ton portefeuille.",
     "btnText": "Connectez votre portefeuille"
   },
   "descriptionApp": {
     "text1": "Le service de portefeuille est entièrement accessible via notre chatbot."
   },
   "footer": {
-    "copyrigth": "Portefeuille de l'AFTA 2023. Tous droits réservés.",
-    "privacy": "Vie privée",
+    "copyrigth": "AFTA WALLET 2023. Tous droits réservés.",
+    "privacy": "Politiques",
     "terms": " Conditions ",
     "faq": "FAQ",
     "contact": "Contactez nous"

@@ -1,28 +1,28 @@
 {
   "hero": {
-    "deposit": "Deposit any currency and amount",
-    "OneWallet": "One wallet for all your local currency",
-    "secureAnd": "Secure and fast exchange wallet",
-    "cashout": "Cashout anywhere easily",
-    "paragra1": "Travel across Africa without having to worry about exchanging from one local currency to another. You get to keep more of the value of your money in any given local currency.",
+    "deposit": "Manage any local currency anywhere across Africa.",
+    "OneWallet": "One wallet for all your local currency needs.",
+    "secureAnd": "Secure and fast exchange and payment wallet.",
+    "cashout": "Cashout in local currency anywhere easily",
+    "paragra1": "You can now travel across Africa without worrying about exchanging from one local currency to another. You can keep more of the value of your money in any local currency.",
     "download": "Download",
     "install": " Just scan or tap on whatsapp"
   },
   "description": {
-    "text1": "\"You can now load your CFA, Naira or Cedi into your wallet and cashout the Rand in South Africa or the Shilling in Kenya.\""
+    "text1": "\"You can deposit or send in CFA, Naira or Cedi into your wallet and cashout RWF in Rwanda, Shilling in Kenya orn.\""
   },
   "fontionalitys": {
     "title": {
-      "one": "Fund your wallet",
-      "two": "Cashout your funds",
-      "three": "Track transactions",
-      "four": "Wallet more money"
+      "one": "Deposit and Cashout",
+      "two": "Multi currency",
+      "three": "Transaction History",
+      "four": "Do more"
     },
     "body": {
-      "one": "Deposit money into your wallet directly using any of the available mobile money for free or through a local Agent. We do our best to cover most networks available.",
-      "two": "From any mobile money operator, cashout funds from your wallet in the currency you have funded. Your Cashout will cost you only 4% with no hidden charges. Cashout limits may apply.",
-      "three": "rack all transactions in one place with a detailed history of every operation you perform on the wallet. We make sure your funds don't escape.",
-      "four": "Once you make a deposit in a new local currency, we automatically create a new wallet for you. You don't have to worry about the details. Just use your wallet as if it were one and the same."
+      "one": "Deposit and cashout into/from your wallet directly using any mobile money network or via a local Agent.",
+      "two": "We are always adding more currencies to cover the rest of Africa. So don't be sad if yours is not yet there.",
+      "three": "Get a detailed history of every operation you perform on the wallet. We make sure your funds don't escape.",
+      "four": "Use your wallet balance to purchase online in any local currency. A true wallet should serve you anywhere."
     }
   },
   "conviction": {

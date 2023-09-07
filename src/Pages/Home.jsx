@@ -11,7 +11,7 @@ import Footer from "../Component/footer";
 const Home = () => {
   return (
     <div>
-      <Layout>
+      <Layout classNamePropieties=" bg-[#D1EEFA]">
         <Heros />
       </Layout>
       <Layout classNamePropieties="bg-gradient-to-r from-orange  to-purple">
