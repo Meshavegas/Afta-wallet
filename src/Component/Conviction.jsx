@@ -21,15 +21,19 @@ const Conviction = () => {
         </h1>
         <p className=" text-justify mt-7 text-xl ">{t("conviction.text2")}</p>
       </div>
-      <div className=" w-80 h-80  mt-10 md:mt-0 rounded-full overflow-hidden">
+      <div className="  mt-10 md:mt-0 rounded-full overflow-hidden">
         {/* <img src={Ball} alt="ball" className=" w-full" /> */}
-        <video
+        <img
+          className=""
+          src="https://firebasestorage.googleapis.com/v0/b/after-wallet.appspot.com/o/logo-crop.jpg?alt=media&token=a24827b8-9d48-456d-af38-bad86663412b&_gl=1*xm9055*_ga*MjAyMzk5NjAyMS4xNjkxMTM5NDQ5*_ga_CW55HF8NVT*MTY5NTkwNzQ1Ni4zOC4xLjE2OTU5MTEyNDIuNDguMC4w"
+        />
+        {/* <video
           src={videoCashout}
           muted
           autoPlay
           loop
           className=" w-full object-cover"
-        />
+        /> */}
       </div>
     </div>
   );

@@ -23,12 +23,12 @@ const Home = () => {
       <Layout classNamePropieties="bg-white-gray-light">
         <Conviction />
       </Layout>
-      <Layout
-        classNamePropieties="bg-[url('https://firebasestorage.googleapis.com/v0/b/after-wallet.appspot.com/o/africa.jpg?alt=media&token=e163fe8f-e96c-4906-9a12-b72b9abdfd13')] bg-cover bg-center  bg-opacity-0"
+      {/* <Layout
+        classNamePropieties="bg-white bg-cover bg-center  bg-opacity-0"
         isVisit={true}
       >
-        <Visit />
-      </Layout>
+      <Visit />
+      </Layout> */}
       <Layout classNamePropieties="bg-gradient-to-r from-orange  to-purple">
         <DescriptionApp />
       </Layout>
