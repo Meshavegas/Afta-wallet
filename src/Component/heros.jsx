@@ -55,14 +55,14 @@ const Heros = () => {
         </h1>
         <p className=" text-light md:text-left  text-center text-xl flex flex-col justify-center md:items-start items-center ">
           {t("hero.paragra1")}
-          <div
+          {/* <div
             className=" text-2xl w-full  cursor-pointer justify-center flex flex-col items-center"
             onClick={handleInstall}
           >
             <div className="bg-orange-dark text-white w-fit mt-4 px-8 py-3 rounded-3xl ">
               {t("hero.download")}
             </div>
-          </div>
+          </div> */}
         </p>
         <div>
           <h1 className=" font-bold text-xl md:text-2xl text-center">
@@ -72,7 +72,7 @@ const Heros = () => {
             <a href="https://wa.link/4y31k2" className="w-1/3">
               <img src={whatsapp} alt="" className="w-full" />
             </a>
-            <img src={scan} alt="" className=" md:w-1/5" />
+            <img src={scan} alt="" className=" w-1/5" />
           </div>
         </div>
       </div>
