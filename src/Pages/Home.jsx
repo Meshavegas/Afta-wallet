@@ -7,12 +7,16 @@ import Fontionalitys from "../Component/fontionalitys";
 import Visit from "../Component/visit";
 import DescriptionApp from "../Component/descriptionApp";
 import Footer from "../Component/footer";
+import { StepApp } from "../Component/StepApp";
 
 const Home = () => {
   return (
     <div>
       <Layout classNamePropieties=" bg-[#D1EEFA]">
         <Heros />
+      </Layout>
+      <Layout>
+        <StepApp />
       </Layout>
       <Layout classNamePropieties="bg-gradient-to-r from-orange  to-purple">
         <Description />
