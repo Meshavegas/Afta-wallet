@@ -10,6 +10,9 @@ import {
   Input,
 } from "@material-tailwind/react";
 import { useTranslation } from "react-i18next";
+import fb from "../assets/social/fb.svg";
+import linkedin from "../assets/social/linkedin.svg";
+import x from "../assets/social/x.svg";
 
 const Footer = () => {
   const { t } = useTranslation(["home"]);
@@ -22,7 +25,18 @@ const Footer = () => {
       <div className=" text-white">
         <span>{t("footer.copyrigth")}</span>
       </div>
-      <div className=" flex gap-2 text-xl mt-7">
+      <div className=" flex gap-3 mt-5">
+        <a href="https://www.facebook.com/profile.php?id=100092865524006&mibextid=LQQJ4d">
+          <img src={fb} alt="" className=" w-14 text-white" />
+        </a>
+        <a href="https://www.linkedin.com/company/aftawallet/">
+          <img src={linkedin} alt="" className=" w-14 text-white" />
+        </a>
+        <a href="https://twitter.com/AftaWallet">
+          <img src={x} alt="" className=" w-14 text-white" />
+        </a>
+      </div>
+      <div className=" flex gap-2 text-base md:text-xl mt-5">
         <Link to="/privacy">{t("footer.privacy")}</Link>
         <a href="#">.</a>
         <Link to="terms">{t("footer.terms")}</Link>
