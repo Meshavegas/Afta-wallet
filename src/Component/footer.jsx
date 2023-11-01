@@ -26,13 +26,25 @@ const Footer = () => {
         <span>{t("footer.copyrigth")}</span>
       </div>
       <div className=" flex gap-3 mt-5">
-        <a href="https://www.facebook.com/profile.php?id=100092865524006&mibextid=LQQJ4d">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/profile.php?id=100092865524006&mibextid=LQQJ4d"
+        >
           <img src={fb} alt="" className=" w-14 text-white" />
         </a>
-        <a href="https://www.linkedin.com/company/aftawallet/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/company/aftawallet/"
+        >
           <img src={linkedin} alt="" className=" w-14 text-white" />
         </a>
-        <a href="https://twitter.com/AftaWallet">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/AftaWallet"
+        >
           <img src={x} alt="" className=" w-14 text-white" />
         </a>
       </div>
