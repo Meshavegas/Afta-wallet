@@ -84,10 +84,7 @@ export const NavBar = () => {
                 {t(name)}
               </NavLink>
             ))}
-            <a
-              target="_blank"
-              href="https://us-central1-afta-wallet.cloudfunctions.net/api/v1/docs"
-            >
+            <a target="_blank" href="https://docs.aftawallet.com/">
               {t("api")}
             </a>
 
@@ -142,10 +139,7 @@ export const NavBar = () => {
                 {t(name)}
               </NavLink>
             ))}
-            <a
-              target="_blank"
-              href="https://us-central1-afta-wallet.cloudfunctions.net/api/v1/docs"
-            >
+            <a target="_blank" href="https://docs.aftawallet.com/">
               {t("api")}
             </a>
             <select
