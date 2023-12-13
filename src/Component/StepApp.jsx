@@ -23,7 +23,7 @@ export const StepApp = () => {
       </div>
       <div className=" flex justify-between items-center flex-col">
         <img src={withdraw} alt="" className=" w-48" />
-        <div className=" text-[3em]">Cash Out</div>
+        <div className=" text-[3em]">Cash Out or Pay</div>
       </div>
     </div>
   );
