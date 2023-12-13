@@ -8,12 +8,16 @@ import Visit from "../Component/visit";
 import DescriptionApp from "../Component/descriptionApp";
 import Footer from "../Component/footer";
 import { StepApp } from "../Component/StepApp";
+import CurrencyConvert from "../Component/CurrencyConvert";
 
 const Home = () => {
   return (
     <div>
       <Layout classNamePropieties=" bg-[#D1EEFA]">
         <Heros />
+      </Layout>
+      <Layout classNamePropieties=" bg-[#D1EEEA]">
+        <CurrencyConvert />
       </Layout>
       <Layout>
         <StepApp />
