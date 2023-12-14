@@ -17,23 +17,48 @@ let toArray = [
 const CurrencyConvert = () => {
   const [from, setFrom] = useState("XAF");
   const [to, setTo] = useState("RWF");
-  const [amount, setAmount] = useState(34);
+  const [amount, setAmount] = useState();
+  const [conversionResult, setConversionResult] = useState(null);
+
+  // État pour stocker le timeout ID
+  const [timeoutId, setTimeoutId] = useState(null);
+
+  const debounce = (func, delay) => {
+    let timeoutId;
+    return function (...args) {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => func.apply(this, args), delay);
+    };
+  };
+
+  const convertCurrency = () => {
+    const apiUrl = `https://api.aftawallet.com/v1/fx/convert?amount=${amount}&from=${from}&to=${to}`;
+
+    amount > 0 &&
+      fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          // Mettez à jour le résultat de la conversion dans l'état
+          setConversionResult(data.data);
+        })
+        .catch((error) => {
+          console.error("Erreur lors de la requête fetch :", error);
+        });
+  };
+
+  // const delayedConvertCurrency = debounce(convertCurrency, 1000);
+
+  const handleAmountChange = (e) => {
+    const value = e.target.value;
+    setAmount(value);
+  };
   useEffect(() => {
-    // http://api.currencylayer.com/convert?access_key=f0ac245d786eb78b4fc3bc3e6d19a421&from=EUR&to=GBP&amount=100
-    console.log(from, to, amount, "+++++++++++++++++++++");
-    fetch(
-      `http://api.currencylayer.com/convert?access_key=f0ac245d786eb78b4fc3bc3e6d19a421&from=${from}&to=${to}&amount=${amount}`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((error) => {
-        console.error("Erreur lors de la requête fetch :", error);
-      });
+    // Vérifiez si 'amount' est un nombre avant d'effectuer la requête
+    if (!isNaN(amount)) {
+      convertCurrency();
+    }
   }, [amount]);
 
-  //   console.log(from);
   return (
     <div className=" flex flex-col w-[70%] bg-white rounded-xl p-10">
       <h1 className=" pb-10 text-3xl font-bold text-black">
@@ -51,7 +76,7 @@ const CurrencyConvert = () => {
             value={from}
           >
             <option value="XAF">Cameroun</option>
-            <option value="KSF">Kenya</option>
+            <option value="KSH">Kenya</option>
             <option value="RWF">Rwanda</option>
           </select>
         </div>
@@ -65,9 +90,9 @@ const CurrencyConvert = () => {
             onChange={(e) => setTo(e.target.value)}
             value={to}
           >
-            <option value="US">Cameroun</option>
-            <option value="CA">Kenya</option>
-            <option value="FR">Rwanda</option>
+            <option value="XAF">Cameroun</option>
+            <option value="KSH">Kenya</option>
+            <option value="RWF">Rwanda</option>
           </select>
         </div>
         <div className=" w-[30%]">
@@ -83,18 +108,24 @@ const CurrencyConvert = () => {
             className=" p-2.5 w-full rounded-lg mt-2 border"
             placeholder="0.0"
             required
-            onChange={(e) => setAmount(e.target.value)}
+            onChange={(e) => handleAmountChange(e)}
             value={amount}
           />
         </div>
       </form>
-      <div className=" mt-6 bg-orange px-2 py-4 w-[30%] text-2xl rounded-lg">
-        <p>
-          Received Amount :{" "}
-          <span className=" font-extrabold text-orange-dark">{200}</span>
-        </p>
-      </div>
-      <p>1 USD = 83.29 INR | 1 INR = 0.01 USD</p>
+      {conversionResult && (
+        <>
+          <div className=" mt-6 bg-orange px-2 py-4 w-[30%] text-lg rounded-lg">
+            <p>
+              Received Amount :{" "}
+              <span className=" font-extrabold text-orange-dark">
+                {to} {conversionResult?.result}
+              </span>
+            </p>
+          </div>
+          <p>{conversionResult?.rate}</p>
+        </>
+      )}
     </div>
   );
 };
