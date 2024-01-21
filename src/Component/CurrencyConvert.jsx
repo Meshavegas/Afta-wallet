@@ -60,12 +60,12 @@ const CurrencyConvert = () => {
   }, [amount]);
 
   return (
-    <div className=" flex flex-col w-[70%] bg-white rounded-xl p-10">
+    <div className=" flex flex-col w-full md:w-[70%] bg-white rounded-xl p-10">
       <h1 className=" pb-10 text-3xl font-bold text-black">
         Exchange Rate Today
       </h1>
-      <form className=" flex justify-between ">
-        <div className=" w-[30%]">
+      <form className=" flex justify-between md:flex-row flex-col">
+        <div className=" w-full md:w-[30%]">
           <label htmlFor="large" className="text-xl font-medium text-gray-900">
             From
           </label>
@@ -80,7 +80,7 @@ const CurrencyConvert = () => {
             <option value="RWF">Rwanda</option>
           </select>
         </div>
-        <div className="w-[30%]">
+        <div className="w-full md:w-[30%]">
           <label htmlFor="large" className=" text-xl font-medium text-gray-900">
             To
           </label>
@@ -95,7 +95,7 @@ const CurrencyConvert = () => {
             <option value="RWF">Rwanda</option>
           </select>
         </div>
-        <div className=" w-[30%]">
+        <div className=" w-full md:w-[30%]">
           <label
             htmlFor="amount"
             className=" text-xl font-medium text-gray-900"
@@ -115,7 +115,7 @@ const CurrencyConvert = () => {
       </form>
       {conversionResult && (
         <>
-          <div className=" mt-6 bg-orange px-2 py-4 w-[30%] text-lg rounded-lg">
+          <div className=" mt-6 bg-orange px-2 py-4 w-full md:w-[30%] text-base md:text-lg rounded-lg">
             <p>
               Received Amount :{" "}
               <span className=" font-extrabold text-orange-dark">
