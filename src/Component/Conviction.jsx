@@ -25,7 +25,7 @@ const Conviction = () => {
         {/* <img src={Ball} alt="ball" className=" w-full" /> */}
         <img
           className=""
-          src="https://firebasestorage.googleapis.com/v0/b/after-wallet.appspot.com/o/logo-crop.jpg?alt=media&token=a24827b8-9d48-456d-af38-bad86663412b&_gl=1*xm9055*_ga*MjAyMzk5NjAyMS4xNjkxMTM5NDQ5*_ga_CW55HF8NVT*MTY5NTkwNzQ1Ni4zOC4xLjE2OTU5MTEyNDIuNDguMC4w"
+          src="https://firebasestorage.googleapis.com/v0/b/after-wallet.appspot.com/o/WhatsApp%20Image%202024-01-31%20at%2010.48.33%20PM.jpeg?alt=media&token=d37ac6ee-1ad1-4c55-985d-3977240ade9f"
         />
         {/* <video
           src={videoCashout}

@@ -76,7 +76,7 @@ const CurrencyConvert = () => {
             value={from}
           >
             <option value="XAF">Cameroun</option>
-            <option value="KSH">Kenya</option>
+            <option value="KES">Kenya</option>
             <option value="RWF">Rwanda</option>
           </select>
         </div>
@@ -91,7 +91,7 @@ const CurrencyConvert = () => {
             value={to}
           >
             <option value="XAF">Cameroun</option>
-            <option value="KSH">Kenya</option>
+            <option value="KES">Kenya</option>
             <option value="RWF">Rwanda</option>
           </select>
         </div>
